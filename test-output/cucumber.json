@@ -1,0 +1,208 @@
+[
+  {
+    "line": 8,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Acessar Pagina de Treinamento Automacao Web",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 1723000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que clico no botao \"COMEÇAR AUTOMAÇÃO WEB\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"COMEÇAR AUTOMAÇÃO WEB\"",
+                  "offset": 19
+                }
+              ],
+              "location": "br.com.iuriraredu.stepsDefinitions.HomeStepsDefinitions.queClicoNoBotao(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 187000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.iuriraredu.hooks.Hooks.reportScreenShot()"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-05T22:26:08.271Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6020000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.iuriraredu.hooks.Hooks.initWebApplication()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Realizar cadastro de usuario com todos os dados validos",
+        "description": "",
+        "id": "formulario-do-site-automacao-com-batista;realizar-cadastro-de-usuario-com-todos-os-dados-validos",
+        "after": [
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.iuriraredu.hooks.Hooks.finishWebApplication()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 955000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "que navego ate o formulario de criar novo usuario",
+            "match": {
+              "location": "br.com.iuriraredu.stepsDefinitions.TreinamentoStepsDefinitions.queNavegoAteOFormularioDeCriarNovoUsuario()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 166000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.iuriraredu.hooks.Hooks.reportScreenShot()"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 944000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "preencho os campos com dados validos",
+            "match": {
+              "location": "br.com.iuriraredu.stepsDefinitions.NovoUsuarioStepsDefinitions.preenchoOsCamposComDadosValidos()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 212000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.iuriraredu.hooks.Hooks.reportScreenShot()"
+                }
+              }
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1222000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "clico em \"CRIAR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CRIAR\"",
+                  "offset": 9
+                }
+              ],
+              "location": "br.com.iuriraredu.stepsDefinitions.NovoUsuarioStepsDefinitions.clicoEm(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 149000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.iuriraredu.hooks.Hooks.reportScreenShot()"
+                }
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 77000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "sou redirecionado para pagina com a mensagem \"Usuário Criado com sucesso\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Usuário Criado com sucesso",
+                  "offset": 46
+                }
+              ],
+              "location": "br.com.iuriraredu.stepsDefinitions.UsuarioStepsDefinitions.souRedirecionadoParaPaginaComAMensagem(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 184000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.iuriraredu.hooks.Hooks.reportScreenShot()"
+                }
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Formulario"
+          },
+          {
+            "name": "@web"
+          },
+          {
+            "name": "@CadastrarUsuario"
+          }
+        ]
+      }
+    ],
+    "name": "Formulario do site Automacao com Batista",
+    "description": "",
+    "id": "formulario-do-site-automacao-com-batista",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/features/TesteFormulario.feature",
+    "tags": [
+      {
+        "name": "@Formulario",
+        "type": "Tag",
+        "location": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    ]
+  }
+]
