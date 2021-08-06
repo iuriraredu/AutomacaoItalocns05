@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1723000000,
+              "duration": 1406000000,
               "status": "passed"
             },
             "line": 11,
@@ -28,11 +28,11 @@
             "after": [
               {
                 "result": {
-                  "duration": 187000000,
+                  "duration": 143000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "br.com.iuriraredu.hooks.Hooks.reportScreenShot()"
+                  "location": "br.com.iuriraredu.hooks.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
                 }
               }
             ],
@@ -41,11 +41,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-05T22:26:08.271Z",
+        "start_timestamp": "2021-08-06T01:48:10.380Z",
         "before": [
           {
             "result": {
-              "duration": 6020000000,
+              "duration": 5908000000,
               "status": "passed"
             },
             "match": {
@@ -60,7 +60,7 @@
         "after": [
           {
             "result": {
-              "duration": 109000000,
+              "duration": 75000000,
               "status": "passed"
             },
             "match": {
@@ -73,7 +73,7 @@
         "steps": [
           {
             "result": {
-              "duration": 955000000,
+              "duration": 495000000,
               "status": "passed"
             },
             "line": 15,
@@ -84,11 +84,11 @@
             "after": [
               {
                 "result": {
-                  "duration": 166000000,
+                  "duration": 97000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "br.com.iuriraredu.hooks.Hooks.reportScreenShot()"
+                  "location": "br.com.iuriraredu.hooks.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
                 }
               }
             ],
@@ -96,7 +96,7 @@
           },
           {
             "result": {
-              "duration": 944000000,
+              "duration": 611000000,
               "status": "passed"
             },
             "line": 16,
@@ -107,11 +107,11 @@
             "after": [
               {
                 "result": {
-                  "duration": 212000000,
+                  "duration": 150000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "br.com.iuriraredu.hooks.Hooks.reportScreenShot()"
+                  "location": "br.com.iuriraredu.hooks.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
                 }
               }
             ],
@@ -119,7 +119,7 @@
           },
           {
             "result": {
-              "duration": 1222000000,
+              "duration": 957000000,
               "status": "passed"
             },
             "line": 17,
@@ -136,11 +136,11 @@
             "after": [
               {
                 "result": {
-                  "duration": 149000000,
+                  "duration": 122000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "br.com.iuriraredu.hooks.Hooks.reportScreenShot()"
+                  "location": "br.com.iuriraredu.hooks.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
                 }
               }
             ],
@@ -148,7 +148,7 @@
           },
           {
             "result": {
-              "duration": 77000000,
+              "duration": 69000000,
               "status": "passed"
             },
             "line": 18,
@@ -165,11 +165,11 @@
             "after": [
               {
                 "result": {
-                  "duration": 184000000,
+                  "duration": 111000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "br.com.iuriraredu.hooks.Hooks.reportScreenShot()"
+                  "location": "br.com.iuriraredu.hooks.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
                 }
               }
             ],
@@ -193,7 +193,7 @@
     "description": "",
     "id": "formulario-do-site-automacao-com-batista",
     "keyword": "Funcionalidade",
-    "uri": "file:src/test/features/TesteFormulario.feature",
+    "uri": "file:src/test/resources/features/TesteFormulario.feature",
     "tags": [
       {
         "name": "@Formulario",

@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.File;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 
 public abstract class BaseTest {
 
@@ -39,19 +40,19 @@ public abstract class BaseTest {
 
         webDriver.manage().window().maximize();
         webDriver.get(PropertiesManager.getPropertiesValue("URLQA"));
-        wait = new WebDriverWait(webDriver, 15);
+        wait = new WebDriverWait(webDriver, Duration.ofSeconds(15));
     }
 
     public static void browserTearDown(){
         webDriver.close();
     }
 
-    public static void browserScreenShot(){
+    public static void browserScreenShot(String nomeCenario){
         File screenshot = ((TakesScreenshot)webDriver).getScreenshotAs(OutputType.FILE);
         try {
             FileUtils.copyFile(screenshot, new File("test-output/Screenshot/" +
                     new SimpleDateFormat("yyyy-MM-dd-hhmmss").
-                            format(new Timestamp(System.currentTimeMillis())) + "_print.png"));
+                            format(new Timestamp(System.currentTimeMillis())) + "_" + nomeCenario + ".png"));
         } catch (Exception e){
             System.out.println("Houveram problemas ao copiar o arquivo para pasta!\n"+e.getMessage());
         }

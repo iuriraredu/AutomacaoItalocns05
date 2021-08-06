@@ -7,6 +7,7 @@ import java.io.OutputStream;
 import java.util.Properties;
 
 public class PropertiesManager {
+
     static Properties properties = new Properties();
 
     public static String getPropertiesValue (String key) {
