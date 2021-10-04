@@ -1,9 +1,5 @@
 package br.com.iuriraredu.settings;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.Properties;
 
 public class PropertiesManager {
@@ -12,8 +8,7 @@ public class PropertiesManager {
 
     public static String getPropertiesValue (String key) {
         try {
-            InputStream inputStream = new FileInputStream("src/main/resources/application.properties");
-            properties.load(inputStream);
+            properties.load(FileManager.readPropertiesFile());
         } catch (Exception e){
             e.printStackTrace();
         }
@@ -21,10 +16,9 @@ public class PropertiesManager {
     }
 
     public static void setPropertiesValue(String key, String value){
+        properties.setProperty(key, value);
         try {
-            OutputStream outputStream = new FileOutputStream("src/main/resources/application.properties");
-            properties.setProperty(key, value);
-            properties.store(outputStream, null);
+            properties.store(FileManager.writePropertiesFile(), null);
         } catch (Exception e){
             e.printStackTrace();
         }

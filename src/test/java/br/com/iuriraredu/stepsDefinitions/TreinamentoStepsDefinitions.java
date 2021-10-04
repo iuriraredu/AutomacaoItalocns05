@@ -10,7 +10,7 @@ public class TreinamentoStepsDefinitions {
     public TreinamentoStepsDefinitions() {
         this.treinamentoActions = new TreinamentoActions();
     }
-    @Dado("^que navego ate o formulario de criar novo usuario$")
+    @Dado("que navego ate o formulario de criar novo usuario")
     public void queNavegoAteOFormularioDeCriarNovoUsuario() {
         this.treinamentoActions.clicarNoLinkFormulario();
         this.treinamentoActions.clicarNoLinkCriarUsuario();

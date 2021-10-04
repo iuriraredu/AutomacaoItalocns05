@@ -51,7 +51,7 @@
             <version>6.10.4</version>
         </dependency>
 
-        <!-- https://github.com/bonigarcia/webdrivermanager-->
+        <!-- https://github.com/bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>

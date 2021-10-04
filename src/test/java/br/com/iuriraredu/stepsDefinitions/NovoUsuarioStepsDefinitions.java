@@ -11,7 +11,8 @@ public class NovoUsuarioStepsDefinitions {
     public NovoUsuarioStepsDefinitions() {
         this.novoUsuarioActions = new NovoUsuarioActions();
     }
-    @E("^preencho os campos com dados validos$")
+
+    @E("preencho os campos com dados validos")
     public void preenchoOsCamposComDadosValidos(){
         this.novoUsuarioActions.preencherDados();
     }
